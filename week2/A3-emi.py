@@ -1,0 +1,7 @@
+print("EMI Calculator:")    
+principal = float(input("Enter the principal amount: "))
+annual_rate = float(input("Enter the annual interest rate (in %): "))
+num = int(input("Enter the number of monthly payments: "))
+rate = annual_rate / (12 * 100)
+EMI = (principal * rate * ((1 + rate) ** num)) / (((1 + rate) ** num) - 1)
+print("The Equated Monthly Installment is:", round(EMI, 2))
