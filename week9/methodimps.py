@@ -1,0 +1,8 @@
+file = open("test.txt", "r")
+print("Reading the existing file from character 3:")
+file.seek(3)
+content = file.readline()
+print(content)
+print(file.tell())
+file.flush()
+file.close()
